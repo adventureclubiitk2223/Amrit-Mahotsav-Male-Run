@@ -1,0 +1,350 @@
+<!DOCTYPE html><html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example Fitness Challenge</title>
+<style>
+  body { color: #000; font-family: Arial, sans-serif; display: grid; grid-template: auto 1fr auto / 100%; min-height: 100vh; margin: 0; }
+  a { text-decoration: none; color: inherit; }
+  a:hover { text-decoration: underline; }
+  h1 { margin: 0; }
+  h2 { clear: left; margin: 1em 0 .5em; }
+  h3 { margin: .5em 0; }
+  header, footer { background: #1e4198; color: white; padding: 1em; }
+  header h2 { margin: .5em 0 0; }
+  main { padding: 1em; }
+  div.bar:after { clear: left; content: ""; display: block; }
+  h3 img { min-height: 124px; min-width: 124px; }
+  img { border-radius: 10%; }
+  table { border-collapse: collapse; margin: 0 0 1.5em; }
+  tr { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+  tr:first-child, tr:last-child { border-top: 1px solid #333; border-bottom: 1px solid #333; }
+  th, td { max-width: 25em; padding: .5em 1em; text-align: left; vertical-align: top; }
+  th.numeric, td.numeric { text-align: right; }
+  .athlete th:last-child:hover::after, .club th:last-child:hover::after, .standings th:last-child:hover::after { content: " (Bike miles are divided by 4)"; color: #c00; background: #fff; position: absolute; }
+  .athlete td:first-child { white-space: nowrap; }
+  img, .activities, .leaders { float: left; margin: 0 1em 0 0; }
+  .activities, .leaders { margin-bottom: 1px; }
+  .activities h3, .leaders h3 { margin-top: 0; }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1><a href="./">Example Fitness Challenge</a></h1>
+  <h2>672 KM complete! (73 hours)</h2>
+</header>
+
+<main>
+  <p>
+    <strong>First day:</strong> July 29<br>
+    <strong>Last day:</strong> September 30<br>
+    <strong>Updated through end of Day 2:</strong> July 30
+  </p>
+
+  <h2>Clubs</h2>
+<table class="standings"><tbody><tr><th colspan="2">Club</th>
+<th class="numeric">Run</th>
+<th class="numeric">Total</th><th class="numeric">Total (Adjusted)</th></tr>
+<tr><th>1.</th><th><img alt="logo" src="https://dgalywyr863hv.cloudfront.net/pictures/clubs/1065963/25170076/1/medium.jpg" style="height:20px"><a href="#1065963">Amrit Mahotsav: Ek Unmukt Yatra (Run Event, Male)</a></th>
+<td class="numeric">672.2</td>
+<td class="numeric">672.2</td><th class="numeric">672.2</th></tr>
+<tr><th colspan="2">Totals</th>
+<td class="numeric">672.2</td>
+<td class="numeric">672.2</td><th class="numeric">672.2</th></tr>
+</tbody></table>
+
+  <h2>Leaders</h2>
+<div class="leaders" id="leaders-Run"><h3>Run</h3>
+<table><tbody><tr><th>Athlete</th><th class="numeric">KM</th></tr>
+<tr><th><img alt="logo" src="https://dgalywyr863hv.cloudfront.net/pictures/clubs/1065963/25170076/1/medium.jpg" style="height:20px"><a href="1065963/Sourabh_M_.html">Sourabh M.</a></th><td class="numeric">25.9</td></tr>
+<tr><th><img alt="logo" src="https://dgalywyr863hv.cloudfront.net/pictures/clubs/1065963/25170076/1/medium.jpg" style="height:20px"><a href="1065963/Amrendra_K_.html">Amrendra K.</a></th><td class="numeric">25.7</td></tr>
+<tr><th><img alt="logo" src="https://dgalywyr863hv.cloudfront.net/pictures/clubs/1065963/25170076/1/medium.jpg" style="height:20px"><a href="1065963/Divyansh_B_.html">Divyansh B.</a></th><td class="numeric">25.2</td></tr>
+<tr><th><img alt="logo" src="https://dgalywyr863hv.cloudfront.net/pictures/clubs/1065963/25170076/1/medium.jpg" style="height:20px"><a href="1065963/Lavish_A_.html">Lavish A.</a></th><td class="numeric">24.3</td></tr>
+<tr><th><img alt="logo" src="https://dgalywyr863hv.cloudfront.net/pictures/clubs/1065963/25170076/1/medium.jpg" style="height:20px"><a href="1065963/Utsav_S_.html">Utsav S.</a></th><td class="numeric">24.2</td></tr>
+</tbody></table></div>
+
+  <h2>Top Efforts</h2>
+<div class="activities" id="activities-Run"><h3>Run</h3>
+<table><tbody><tr><th>Athlete</th><th class="numeric">KM</th><th>Date</th><th>Description</th></tr>
+<tr><th><img alt="logo" src="https://dgalywyr863hv.cloudfront.net/pictures/clubs/1065963/25170076/1/medium.jpg" style="height:20px"><a href="1065963/Akshay_K_.html">Akshay K.</a></th><td class="numeric">21.2</td><td>7/30/2022</td><td>Azadi ka amritmahotsev, Run:1</td></tr>
+<tr><th><img alt="logo" src="https://dgalywyr863hv.cloudfront.net/pictures/clubs/1065963/25170076/1/medium.jpg" style="height:20px"><a href="1065963/Amrendra_K_.html">Amrendra K.</a></th><td class="numeric">15.2</td><td>7/30/2022</td><td>Afternoon Run</td></tr>
+<tr><th><img alt="logo" src="https://dgalywyr863hv.cloudfront.net/pictures/clubs/1065963/25170076/1/medium.jpg" style="height:20px"><a href="1065963/Sourabh_M_.html">Sourabh M.</a></th><td class="numeric">13.7</td><td>7/29/2022</td><td>Azadi ka Amrit Mahotsav D1 </td></tr>
+<tr><th><img alt="logo" src="https://dgalywyr863hv.cloudfront.net/pictures/clubs/1065963/25170076/1/medium.jpg" style="height:20px"><a href="1065963/Utsav_S_.html">Utsav S.</a></th><td class="numeric">13.2</td><td>7/30/2022</td><td>AM Day 2</td></tr>
+<tr><th><img alt="logo" src="https://dgalywyr863hv.cloudfront.net/pictures/clubs/1065963/25170076/1/medium.jpg" style="height:20px"><a href="1065963/Divyansh_B_.html">Divyansh B.</a></th><td class="numeric">12.7</td><td>7/30/2022</td><td>Morning Run </td></tr>
+</tbody></table></div>
+
+  <h2>Clubs</h2>
+<h3 id="1065963"><a href="https://www.strava.com/clubs/amritmahotsavrunevent"><img alt="logo" src="https://dgalywyr863hv.cloudfront.net/pictures/clubs/1065963/25170076/1/large.jpg"> Amrit Mahotsav: Ek Unmukt Yatra (Run Event, Male)</a></h3>
+<table class="club"><tbody><tr><th>Athlete</th><th>Event</th><th class="numeric">Hours</th><th class="numeric">KM</th><th class="numeric">Total</th><th>Top Effort</th><th class="numeric">Total (Adjusted)</th></tr>
+<tr><th rowspan="1"><a href="1065963/Sourabh_M_.html">Sourabh M.</a></th>
+<td>Run</td><td class="numeric">3:10</td><td class="numeric">25.9</td>
+<td class="numeric" rowspan="1">25.9</td><td rowspan="1">13.7 km run</td><th class="numeric" rowspan="1">25.9</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Amrendra_K_.html">Amrendra K.</a></th>
+<td>Run</td><td class="numeric">2:37</td><td class="numeric">25.7</td>
+<td class="numeric" rowspan="1">25.7</td><td rowspan="1">15.2 km run</td><th class="numeric" rowspan="1">25.7</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Divyansh_B_.html">Divyansh B.</a></th>
+<td>Run</td><td class="numeric">2:22</td><td class="numeric">25.2</td>
+<td class="numeric" rowspan="1">25.2</td><td rowspan="1">12.7 km run</td><th class="numeric" rowspan="1">25.2</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Lavish_A_.html">Lavish A.</a></th>
+<td>Run</td><td class="numeric">2:21</td><td class="numeric">24.3</td>
+<td class="numeric" rowspan="1">24.3</td><td rowspan="1">12.2 km run</td><th class="numeric" rowspan="1">24.3</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Utsav_S_.html">Utsav S.</a></th>
+<td>Run</td><td class="numeric">2:21</td><td class="numeric">24.2</td>
+<td class="numeric" rowspan="1">24.2</td><td rowspan="1">13.2 km run</td><th class="numeric" rowspan="1">24.2</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Chidanand_J_.html">Chidanand J.</a></th>
+<td>Run</td><td class="numeric">2:22</td><td class="numeric">24.0</td>
+<td class="numeric" rowspan="1">24.0</td><td rowspan="1">12.0 km run</td><th class="numeric" rowspan="1">24.0</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Vijaianand_S_.html">Vijaianand S.</a></th>
+<td>Run</td><td class="numeric">2:09</td><td class="numeric">21.7</td>
+<td class="numeric" rowspan="1">21.7</td><td rowspan="1">11.7 km run</td><th class="numeric" rowspan="1">21.7</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Maurya_M_.html">Maurya M.</a></th>
+<td>Run</td><td class="numeric">2:25</td><td class="numeric">21.3</td>
+<td class="numeric" rowspan="1">21.3</td><td rowspan="1">11.2 km run</td><th class="numeric" rowspan="1">21.3</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Akshay_K_.html">Akshay K.</a></th>
+<td>Run</td><td class="numeric">2:06</td><td class="numeric">21.2</td>
+<td class="numeric" rowspan="1">21.2</td><td rowspan="1">21.2 km run</td><th class="numeric" rowspan="1">21.2</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Mangesh_B_.html">Mangesh B.</a></th>
+<td>Run</td><td class="numeric">1:53</td><td class="numeric">18.4</td>
+<td class="numeric" rowspan="1">18.4</td><td rowspan="1">11.3 km run</td><th class="numeric" rowspan="1">18.4</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Mohit_P_.html">Mohit P.</a></th>
+<td>Run</td><td class="numeric">2:03</td><td class="numeric">16.2</td>
+<td class="numeric" rowspan="1">16.2</td><td rowspan="1">10.6 km run</td><th class="numeric" rowspan="1">16.2</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Dhruvam_P_.html">Dhruvam P.</a></th>
+<td>Run</td><td class="numeric">1:43</td><td class="numeric">16.0</td>
+<td class="numeric" rowspan="1">16.0</td><td rowspan="1">10.7 km run</td><th class="numeric" rowspan="1">16.0</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Hari_C_.html">Hari C.</a></th>
+<td>Run</td><td class="numeric">1:31</td><td class="numeric">15.4</td>
+<td class="numeric" rowspan="1">15.4</td><td rowspan="1">7.8 km run</td><th class="numeric" rowspan="1">15.4</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Atul_K_.html">Atul K.</a></th>
+<td>Run</td><td class="numeric">1:26</td><td class="numeric">14.4</td>
+<td class="numeric" rowspan="1">14.4</td><td rowspan="1">8.1 km run</td><th class="numeric" rowspan="1">14.4</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Rameshwar_L_.html">Rameshwar L.</a></th>
+<td>Run</td><td class="numeric">1:19</td><td class="numeric">14.1</td>
+<td class="numeric" rowspan="1">14.1</td><td rowspan="1">6.2 km run</td><th class="numeric" rowspan="1">14.1</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Koustubh_P_.html">Koustubh P.</a></th>
+<td>Run</td><td class="numeric">1:49</td><td class="numeric">14.0</td>
+<td class="numeric" rowspan="1">14.0</td><td rowspan="1">7.7 km run</td><th class="numeric" rowspan="1">14.0</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Shreyansh_T_.html">Shreyansh T.</a></th>
+<td>Run</td><td class="numeric">1:37</td><td class="numeric">14.0</td>
+<td class="numeric" rowspan="1">14.0</td><td rowspan="1">5.6 km run</td><th class="numeric" rowspan="1">14.0</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Shivam_S_.html">Shivam S.</a></th>
+<td>Run</td><td class="numeric">1:06</td><td class="numeric">13.2</td>
+<td class="numeric" rowspan="1">13.2</td><td rowspan="1">6.6 km run</td><th class="numeric" rowspan="1">13.2</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Kp____😎_.html">Kp... 😎.</a></th>
+<td>Run</td><td class="numeric">1:16</td><td class="numeric">12.7</td>
+<td class="numeric" rowspan="1">12.7</td><td rowspan="1">6.7 km run</td><th class="numeric" rowspan="1">12.7</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Ishu_T_.html">Ishu T.</a></th>
+<td>Run</td><td class="numeric">1:13</td><td class="numeric">12.2</td>
+<td class="numeric" rowspan="1">12.2</td><td rowspan="1">12.2 km run</td><th class="numeric" rowspan="1">12.2</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/seraj_A_.html">Seraj A.</a></th>
+<td>Run</td><td class="numeric">1:42</td><td class="numeric">12.1</td>
+<td class="numeric" rowspan="1">12.1</td><td rowspan="1">6.0 km run</td><th class="numeric" rowspan="1">12.1</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/pratyush_R_.html">Pratyush R.</a></th>
+<td>Run</td><td class="numeric">1:10</td><td class="numeric">11.8</td>
+<td class="numeric" rowspan="1">11.8</td><td rowspan="1">4.8 km run</td><th class="numeric" rowspan="1">11.8</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Sonika_S_.html">Sonika S.</a></th>
+<td>Run</td><td class="numeric">1:49</td><td class="numeric">11.7</td>
+<td class="numeric" rowspan="1">11.7</td><td rowspan="1">6.5 km run</td><th class="numeric" rowspan="1">11.7</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Madhur_B_.html">Madhur B.</a></th>
+<td>Run</td><td class="numeric">1:02</td><td class="numeric">11.4</td>
+<td class="numeric" rowspan="1">11.4</td><td rowspan="1">6.0 km run</td><th class="numeric" rowspan="1">11.4</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Vaibhav_T_.html">Vaibhav T.</a></th>
+<td>Run</td><td class="numeric">1:23</td><td class="numeric">11.3</td>
+<td class="numeric" rowspan="1">11.3</td><td rowspan="1">5.7 km run</td><th class="numeric" rowspan="1">11.3</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Ishank_A_.html">Ishank A.</a></th>
+<td>Run</td><td class="numeric">1:04</td><td class="numeric">11.1</td>
+<td class="numeric" rowspan="1">11.1</td><td rowspan="1">5.8 km run</td><th class="numeric" rowspan="1">11.1</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Pavan_T_.html">Pavan T.</a></th>
+<td>Run</td><td class="numeric">1:07</td><td class="numeric">11.1</td>
+<td class="numeric" rowspan="1">11.1</td><td rowspan="1">5.6 km run</td><th class="numeric" rowspan="1">11.1</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Venkatesh_T_.html">Venkatesh T.</a></th>
+<td>Run</td><td class="numeric">1:30</td><td class="numeric">10.6</td>
+<td class="numeric" rowspan="1">10.6</td><td rowspan="1">5.5 km run</td><th class="numeric" rowspan="1">10.6</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Ramesh_R_.html">Ramesh R.</a></th>
+<td>Run</td><td class="numeric">:57</td><td class="numeric">10.3</td>
+<td class="numeric" rowspan="1">10.3</td><td rowspan="1">10.3 km run</td><th class="numeric" rowspan="1">10.3</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Abhishek_T_.html">Abhishek T.</a></th>
+<td>Run</td><td class="numeric">1:27</td><td class="numeric">10.3</td>
+<td class="numeric" rowspan="1">10.3</td><td rowspan="1">10.3 km run</td><th class="numeric" rowspan="1">10.3</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Kushal_Pratap_S_.html">Kushal Pratap S.</a></th>
+<td>Run</td><td class="numeric">1:02</td><td class="numeric">10.2</td>
+<td class="numeric" rowspan="1">10.2</td><td rowspan="1">10.2 km run</td><th class="numeric" rowspan="1">10.2</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Sumit_G_.html">Sumit G.</a></th>
+<td>Run</td><td class="numeric">:56</td><td class="numeric">8.5</td>
+<td class="numeric" rowspan="1">8.5</td><td rowspan="1">4.7 km run</td><th class="numeric" rowspan="1">8.5</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Punit_S_.html">Punit S.</a></th>
+<td>Run</td><td class="numeric">:54</td><td class="numeric">8.5</td>
+<td class="numeric" rowspan="1">8.5</td><td rowspan="1">5.0 km run</td><th class="numeric" rowspan="1">8.5</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Praveen_K_.html">Praveen K.</a></th>
+<td>Run</td><td class="numeric">1:09</td><td class="numeric">7.4</td>
+<td class="numeric" rowspan="1">7.4</td><td rowspan="1">6.2 km run</td><th class="numeric" rowspan="1">7.4</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Chunendra_S_.html">Chunendra S.</a></th>
+<td>Run</td><td class="numeric">:43</td><td class="numeric">7.1</td>
+<td class="numeric" rowspan="1">7.1</td><td rowspan="1">3.7 km run</td><th class="numeric" rowspan="1">7.1</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Sameer_G_.html">Sameer G.</a></th>
+<td>Run</td><td class="numeric">:48</td><td class="numeric">6.7</td>
+<td class="numeric" rowspan="1">6.7</td><td rowspan="1">4.0 km run</td><th class="numeric" rowspan="1">6.7</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Ronald_J_.html">Ronald J.</a></th>
+<td>Run</td><td class="numeric">:40</td><td class="numeric">6.5</td>
+<td class="numeric" rowspan="1">6.5</td><td rowspan="1">4.0 km run</td><th class="numeric" rowspan="1">6.5</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Siddharth_G_.html">Siddharth G.</a></th>
+<td>Run</td><td class="numeric">:29</td><td class="numeric">6.0</td>
+<td class="numeric" rowspan="1">6.0</td><td rowspan="1">6.0 km run</td><th class="numeric" rowspan="1">6.0</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Owais_A_.html">Owais A.</a></th>
+<td>Run</td><td class="numeric">:33</td><td class="numeric">5.9</td>
+<td class="numeric" rowspan="1">5.9</td><td rowspan="1">5.9 km run</td><th class="numeric" rowspan="1">5.9</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Satyam_G_.html">Satyam G.</a></th>
+<td>Run</td><td class="numeric">:49</td><td class="numeric">5.7</td>
+<td class="numeric" rowspan="1">5.7</td><td rowspan="1">5.7 km run</td><th class="numeric" rowspan="1">5.7</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Prajwal_R_.html">Prajwal R.</a></th>
+<td>Run</td><td class="numeric">:33</td><td class="numeric">5.7</td>
+<td class="numeric" rowspan="1">5.7</td><td rowspan="1">5.7 km run</td><th class="numeric" rowspan="1">5.7</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Mohit_M_.html">Mohit M.</a></th>
+<td>Run</td><td class="numeric">:36</td><td class="numeric">5.7</td>
+<td class="numeric" rowspan="1">5.7</td><td rowspan="1">5.7 km run</td><th class="numeric" rowspan="1">5.7</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Manu_S_.html">Manu S.</a></th>
+<td>Run</td><td class="numeric">:52</td><td class="numeric">5.6</td>
+<td class="numeric" rowspan="1">5.6</td><td rowspan="1">5.6 km run</td><th class="numeric" rowspan="1">5.6</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Sanjeev_S_.html">Sanjeev S.</a></th>
+<td>Run</td><td class="numeric">:33</td><td class="numeric">5.6</td>
+<td class="numeric" rowspan="1">5.6</td><td rowspan="1">5.6 km run</td><th class="numeric" rowspan="1">5.6</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Animesh_T_.html">Animesh T.</a></th>
+<td>Run</td><td class="numeric">:33</td><td class="numeric">5.6</td>
+<td class="numeric" rowspan="1">5.6</td><td rowspan="1">5.6 km run</td><th class="numeric" rowspan="1">5.6</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Ranju_P_R_.html">Ranju P R.</a></th>
+<td>Run</td><td class="numeric">:49</td><td class="numeric">5.6</td>
+<td class="numeric" rowspan="1">5.6</td><td rowspan="1">5.6 km run</td><th class="numeric" rowspan="1">5.6</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Vaibhav_C_.html">Vaibhav C.</a></th>
+<td>Run</td><td class="numeric">:33</td><td class="numeric">5.6</td>
+<td class="numeric" rowspan="1">5.6</td><td rowspan="1">5.6 km run</td><th class="numeric" rowspan="1">5.6</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Mohd_Javed_A_.html">Mohd Javed A.</a></th>
+<td>Run</td><td class="numeric">:32</td><td class="numeric">5.5</td>
+<td class="numeric" rowspan="1">5.5</td><td rowspan="1">5.5 km run</td><th class="numeric" rowspan="1">5.5</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Abhishek_P_.html">Abhishek P.</a></th>
+<td>Run</td><td class="numeric">:33</td><td class="numeric">5.5</td>
+<td class="numeric" rowspan="1">5.5</td><td rowspan="1">5.5 km run</td><th class="numeric" rowspan="1">5.5</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Mukul_J_.html">Mukul J.</a></th>
+<td>Run</td><td class="numeric">:33</td><td class="numeric">5.5</td>
+<td class="numeric" rowspan="1">5.5</td><td rowspan="1">5.5 km run</td><th class="numeric" rowspan="1">5.5</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Haasanthi_M_.html">Haasanthi M.</a></th>
+<td>Run</td><td class="numeric">:33</td><td class="numeric">5.3</td>
+<td class="numeric" rowspan="1">5.3</td><td rowspan="1">3.1 km run</td><th class="numeric" rowspan="1">5.3</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Meghna_J_.html">Meghna J.</a></th>
+<td>Run</td><td class="numeric">:27</td><td class="numeric">5.1</td>
+<td class="numeric" rowspan="1">5.1</td><td rowspan="1">3.1 km run</td><th class="numeric" rowspan="1">5.1</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Ankit_B_.html">Ankit B.</a></th>
+<td>Run</td><td class="numeric">:36</td><td class="numeric">5.1</td>
+<td class="numeric" rowspan="1">5.1</td><td rowspan="1">5.1 km run</td><th class="numeric" rowspan="1">5.1</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Ravi_K_.html">Ravi K.</a></th>
+<td>Run</td><td class="numeric">:40</td><td class="numeric">5.1</td>
+<td class="numeric" rowspan="1">5.1</td><td rowspan="1">4.1 km run</td><th class="numeric" rowspan="1">5.1</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Sanket_G_.html">Sanket G.</a></th>
+<td>Run</td><td class="numeric">:33</td><td class="numeric">5.1</td>
+<td class="numeric" rowspan="1">5.1</td><td rowspan="1">5.1 km run</td><th class="numeric" rowspan="1">5.1</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Sohan_G_.html">Sohan G.</a></th>
+<td>Run</td><td class="numeric">:34</td><td class="numeric">5.0</td>
+<td class="numeric" rowspan="1">5.0</td><td rowspan="1">5.0 km run</td><th class="numeric" rowspan="1">5.0</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Tarun_C_.html">Tarun C.</a></th>
+<td>Run</td><td class="numeric">:30</td><td class="numeric">4.9</td>
+<td class="numeric" rowspan="1">4.9</td><td rowspan="1">4.9 km run</td><th class="numeric" rowspan="1">4.9</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Anwesh_K_.html">Anwesh K.</a></th>
+<td>Run</td><td class="numeric">:22</td><td class="numeric">4.6</td>
+<td class="numeric" rowspan="1">4.6</td><td rowspan="1">4.6 km run</td><th class="numeric" rowspan="1">4.6</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Bibhudatta_S_.html">Bibhudatta S.</a></th>
+<td>Run</td><td class="numeric">:44</td><td class="numeric">4.2</td>
+<td class="numeric" rowspan="1">4.2</td><td rowspan="1">4.2 km run</td><th class="numeric" rowspan="1">4.2</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Amandeep_B_.html">Amandeep B.</a></th>
+<td>Run</td><td class="numeric">:21</td><td class="numeric">3.9</td>
+<td class="numeric" rowspan="1">3.9</td><td rowspan="1">3.9 km run</td><th class="numeric" rowspan="1">3.9</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Aashish_S_.html">Aashish S.</a></th>
+<td>Run</td><td class="numeric">:18</td><td class="numeric">3.3</td>
+<td class="numeric" rowspan="1">3.3</td><td rowspan="1">3.3 km run</td><th class="numeric" rowspan="1">3.3</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Ayush_R_.html">Ayush R.</a></th>
+<td>Run</td><td class="numeric">:12</td><td class="numeric">2.3</td>
+<td class="numeric" rowspan="1">2.3</td><td rowspan="1">2.3 km run</td><th class="numeric" rowspan="1">2.3</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Saurabh_Singh_C_.html">Saurabh Singh C.</a></th>
+<td>Run</td><td class="numeric">:15</td><td class="numeric">2.1</td>
+<td class="numeric" rowspan="1">2.1</td><td rowspan="1">2.1 km run</td><th class="numeric" rowspan="1">2.1</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Aravind_S_.html">Aravind S.</a></th>
+<td>Run</td><td class="numeric">:12</td><td class="numeric">2.0</td>
+<td class="numeric" rowspan="1">2.0</td><td rowspan="1">2.0 km run</td><th class="numeric" rowspan="1">2.0</th>
+</tr>
+<tr><th rowspan="1"><a href="1065963/Susmitha_I_.html">Susmitha I.</a></th>
+<td></td><td></td><td></td><td></td><td></td><th class="numeric">0</th></tr>
+<tr><th>Club Total</th><th></th><th class="numeric">73:00</th><th></th><th class="numeric">672.2</th><th></th><th class="numeric">672.2</th></tr>
+</tbody></table>
+
+  <p><strong>Last update:</strong> Sun, 31 Jul 2022 14:13 IST</p>
+</main>
+
+<footer>
+	<p>&copy; Copyright 2021</p>
+</footer>
+
+</body>
+</html>
